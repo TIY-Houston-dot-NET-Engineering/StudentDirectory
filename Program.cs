@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 namespace ConsoleApplication
 {
+
     public class Program
     {
         public static string join(IEnumerable<string> arr){
@@ -54,11 +55,11 @@ namespace ConsoleApplication
             // requires 'using System.Linq'
             Console.WriteLine( join(words.Select(w => camel(w))) );
             Console.WriteLine( join(words.Select(w =>
-                Char.ToUpper(w[0]) + w.Substring(1) 
+                Char.ToUpper(w[0]) + w.Substring(1)
             )) );
 
             Console.WriteLine( join(otherWords) );
-            
+
             Console.WriteLine( join(words) );
 
             var TIY = new School();
